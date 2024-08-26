@@ -36,6 +36,10 @@ section::before {
     width: 60px;
 }
 
+.home img {
+    width: 100%;
+}
+
 #arrow {
     animation: 2s upDown infinite;
 }
@@ -98,7 +102,7 @@ section::before {
 }
 
 #work-1:hover::after {
-    content: 'Software Engineer';
+    content: 'Front-end Developer';
 }
 
 #work-2 {
@@ -106,7 +110,7 @@ section::before {
 }
 
 #work-2:hover::after {
-    content: 'Software Engineer';
+    content: 'UI/UX Designer';
 }
 
 #work-3 {
@@ -114,7 +118,7 @@ section::before {
 }
 
 #work-3:hover::after {
-    content: 'Software Engineer';
+    content: 'Graphic Designer';
 }
 
 .form-label {
@@ -131,6 +135,18 @@ section::before {
     border-radius: 10px;
 }
 
+@media only screen and (max-width :768px) {
+    .home img {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width :576px) {
+    section::before {
+        left: -10px;
+        font-size: 64px;
+    }
+}
 @keyframes upDown {
     0% {
         transform: translateY(0)
