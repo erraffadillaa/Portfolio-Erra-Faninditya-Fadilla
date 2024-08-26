@@ -117,6 +117,20 @@ section::before {
     content: 'Software Engineer';
 }
 
+.form-label {
+    font-weight: 500;
+}
+
+.contact::before {
+    content: 'Contact';
+}
+
+.contact-form {
+    border: 1px solid black;
+    padding: 48px 32px;
+    border-radius: 10px;
+}
+
 @keyframes upDown {
     0% {
         transform: translateY(0)
